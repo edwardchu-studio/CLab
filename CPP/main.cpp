@@ -1,7 +1,16 @@
-CFALGS=-Wall -g
+#include <iostream>
+#include <cmath>
+// #include <string>
 
-all:
-	g++ main.cpp -o main
-
-clean:
-	rm -f main
+float mysqrt(int n)
+{
+  return sqrt(n);
+}
+int main(void)
+{
+  using namespace std;
+  int input;
+  cin>>input;
+  cout<<"The sqrt of "<<input<<" is "<<mysqrt(input)<<endl;
+  return 0;
+}
