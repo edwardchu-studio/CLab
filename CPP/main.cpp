@@ -2,7 +2,8 @@
 #include <cmath>
 #include <string>
 #include <climits>
-#include "limits.cpp"
+// #include "limits.cpp"
+#include <vector>
 float mysqrt(int n)
 {
   return sqrt(n);
@@ -11,15 +12,10 @@ float mysqrt(int n)
 int main(void)
 {
   using namespace std;
-  const int ArSize=20;
-  char name[ArSize];
-  char dessert[ArSize];
-  cout<<"Enter your name"<<endl;
-  cin.getline(name,ArSize);
-  cout<<"Enter your favorite dessert"<<endl;
-  cin.getline(dessert,ArSize);
-  cout<<"I have some delicious "<<dessert;
-  cout<<" for you, "<<name<<" .\n";
+  vector <int> vi;
+  int n;
+  cin>>n;
+  vector <double> vd(n);
   return 0;
 }
 
