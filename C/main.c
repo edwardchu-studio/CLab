@@ -2,10 +2,20 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/wait.h>
-
+#include <unistd.h>
 #include "struct.c"
 int main(void){
-  char* s="hello world";
-  printf("the input is %s, with address:%#08x",s,&s);
+  int forked;
+  for(int i=0;i<=4;i++)
+    {
+      if(i%2==0)
+        {
+          printf("i:%d\n",i);
+          forked=fork();
+          printf("forked:%d\n",forked);
+        }
+      printf("foo(i:%d,id:%d)\n",i,forked);
+    }
+
   return 0;
 }
