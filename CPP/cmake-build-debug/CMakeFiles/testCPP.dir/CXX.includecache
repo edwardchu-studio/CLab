@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/edwardchor/Base/Laboratory/CLab/CPP/Sales_item.h
+iostream
+-
+string
+-
+
+/Users/edwardchor/Base/Laboratory/CLab/CPP/main.cpp
+iostream
+-
+cmath
+-
+string
+-
+climits
+-
+fstream
+-
+vector
+-
+ctime
+-
+stdio.h
+-
+unistd.h
+-
+section_1.h
+/Users/edwardchor/Base/Laboratory/CLab/CPP/section_1.h
+Sales_item.h
+/Users/edwardchor/Base/Laboratory/CLab/CPP/Sales_item.h
+
+/Users/edwardchor/Base/Laboratory/CLab/CPP/section_1.h
+iostream
+-
+
